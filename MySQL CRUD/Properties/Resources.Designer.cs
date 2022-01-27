@@ -63,36 +63,6 @@ namespace MySQL_CRUD.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap search_searching_looking_research_information_260nw_243373465 {
-            get {
-                object obj = ResourceManager.GetObject("search-searching-looking-research-information-260nw-243373465", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap search_searching_looking_research_information_260nw_2433734651231231 {
-            get {
-                object obj = ResourceManager.GetObject("search-searching-looking-research-information-260nw-2433734651231231", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap search_searching_looking_research_information_260nw_2433734651231231123123 {
-            get {
-                object obj = ResourceManager.GetObject("search-searching-looking-research-information-260nw-2433734651231231123123", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap search_searching_looking_research_information_260nw_24337346512312311231231 {
             get {
                 object obj = ResourceManager.GetObject("search-searching-looking-research-information-260nw-24337346512312311231231", resourceCulture);
