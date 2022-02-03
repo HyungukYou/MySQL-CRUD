@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MySQL_CRUD
+﻿namespace MySQL_CRUD
 {
     internal class Student
     {
         public string Name { get; set; }
 
-        public string Reg { get; set; }  
+        public string Reg { get; set; }
 
         public string Class { get; set; }
 

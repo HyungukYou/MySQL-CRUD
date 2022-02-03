@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MySQL_CRUD
@@ -13,11 +6,11 @@ namespace MySQL_CRUD
     public partial class FormStudent : Form
     {
         private readonly FormStudentInfo _parent;
-        private string id;
-        private string name;
-        private string reg;
-        private string @class;
-        private string section;
+        public string id;
+        public string name; // 이름
+        public string reg; // 학생 등록
+        public string @class; // 반
+        public string section; // 학생 구분 
 
         public FormStudent(FormStudentInfo parent)
         {
@@ -63,7 +56,7 @@ namespace MySQL_CRUD
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            if(txtName.Text.Trim().Length < 3)
+            if (txtName.Text.Trim().Length < 3)
             {
                 MessageBox.Show("Student name is Empty ( > 3 ).");
             }
@@ -82,13 +75,13 @@ namespace MySQL_CRUD
                 MessageBox.Show("Student section is Empty ( > 1 ).");
                 return;
             }
-            if(btnSave.Text == "Save")
+            if (btnSave.Text == "Save")
             {
                 Student std = new Student(txtName.Text.Trim(), txtReg.Text.Trim(), txtClass.Text.Trim(), txtSection.Text.Trim());
                 DbStudent.AddStudent(std);
                 Clear();
             }
-            if(btnSave.Text == "Update")
+            if (btnSave.Text == "Update")
             {
                 Student std = new Student(txtName.Text.Trim(), txtReg.Text.Trim(), txtClass.Text.Trim(), txtSection.Text.Trim());
                 DbStudent.UpdateStudent(std, id);
